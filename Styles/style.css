@@ -42,3 +42,7 @@ a:hover {
   table, th, td {
     border: 1px solid black;
   }
+
+  button {
+    /*syles for width and height*/
+  }
