@@ -1,0 +1,44 @@
+body {
+    font-family: 'Comfortaa', cursive;
+}
+
+div {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+    display: block;
+    width: 800px;
+}
+
+dt {
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+a {
+    font-size: 1.7em;
+}
+
+a:link {
+    color: green; 
+    background-color: transparent; 
+    text-decoration: none;
+  }
+  
+a:visited {
+    color: rgba(87, 0, 158, 0.253);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+
+  table, th, td {
+    border: 1px solid black;
+  }
