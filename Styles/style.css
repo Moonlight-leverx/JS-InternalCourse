@@ -43,6 +43,10 @@ a:hover {
     border: 1px solid black;
   }
 
+  td {
+    text-align: center;
+  }
+
   button {
     /*syles for width and height*/
   }
