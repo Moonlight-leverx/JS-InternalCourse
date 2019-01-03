@@ -1,0 +1,26 @@
+#header tr {
+    background-color: gold;
+    height: 10vh;
+}
+
+table {
+    width: 100%;
+    border-spacing:1.5vh;
+}
+
+#top tr {
+    background-color: greenyellow;
+    height: 35vh;
+}
+
+#middle tr {
+    background-color: blue;
+    height: 25vh;
+}
+
+#bottom tr {
+    background-color: gray;
+    height: 15vh;
+}
+
+
