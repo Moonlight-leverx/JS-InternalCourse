@@ -1,0 +1,45 @@
+#header div:first-child {
+    position: absolute;
+    background-color: rgb(255, 0, 0);
+    height: 56vh;
+    width: 96vw;
+    margin-left: 2vw;
+    margin-top: 13vh;
+}
+
+#header div:last-child {
+    background-color: rgb(255, 123, 0);
+    height: 10vh;
+    width: 38vw;
+    margin-left: 2vw;
+    margin-top: 2vh;
+}
+
+#top {
+    height: 26vh;
+    width: 47.5vw;
+    margin-top: 70vh;
+    margin-left: 2vw;
+
+    background: rgb(0, 209, 45);
+}
+
+#middle div {
+    height: 26vh;
+    width: 47.5vw;
+    margin-top: 70vh;
+    margin-left: 50.5vw;
+    background-color: rgb(3, 3, 212);
+}
+
+#middle div:first-child {
+    visibility: collapse;
+}
+
+#middle div:last-child {
+    width: 57vw;
+    height: 10vh;
+    margin-top: 2vh;
+    margin-left: 41vw;
+    background-color: rgb(177, 0, 221);
+}

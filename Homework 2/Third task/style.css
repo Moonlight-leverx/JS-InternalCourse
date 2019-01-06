@@ -6,7 +6,7 @@
     height: 600px;
     display: block;
     background-color: rgba(73, 62, 62, 0.5);
-     border-radius: 10px; 
+    border-radius: 10px; 
     transition: box-shadow 0.6s linear;
 }
 

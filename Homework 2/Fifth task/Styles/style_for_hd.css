@@ -1,0 +1,53 @@
+#top {
+    height: 50vh;
+    width: 98vw;
+    margin-left: 1vw;
+    margin-top: 15vh;
+    background: rgb(0, 209, 45);
+}
+
+#header {
+    height: 10vh;
+}
+
+#header div {
+    height: 100%;
+    margin-top: 2vh;
+}
+
+#header div:first-child {
+    width: 38vw;
+    margin-left: 1vw;
+    background-color: rgb(255, 0, 0);
+}
+
+#header div:last-child {
+    width: 59vw;
+    margin-left: 40vw;
+    background-color: rgb(245, 118, 0);
+}
+
+#middle {
+    margin-top: 68vh;
+}
+
+#middle div {
+    height: 26vh;
+    width: 32vw;
+    margin-right: 0.8vw;
+}
+
+#middle div {
+    margin-left: 34vw;
+    background-color: rgb(2, 2, 218);
+}
+
+#middle div:first-child {
+    margin-left: 1vw;
+    background-color: rgb(139, 120, 56);
+}
+
+#middle div:last-child {
+    margin-left: 67vw;
+    background-color: rgb(177, 0, 221);
+}

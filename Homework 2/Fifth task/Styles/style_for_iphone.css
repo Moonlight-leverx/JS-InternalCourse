@@ -1,0 +1,32 @@
+div {
+    margin-left: 2vw;
+    visibility: collapse;
+}
+
+#top {
+    height: 10vh;
+    width: 96vw;
+    margin-left: 2vw;
+    margin-top: 1vh;
+    background: rgb(0, 209, 45);
+    visibility: visible;
+}
+
+#header div:first-child {
+    height: 40vh;
+    width: 96vw;
+    margin-top: 23vh;
+    margin-left: 0;
+    background-color: rgb(255, 0, 0);
+    visibility: visible;
+
+}
+
+#middle div:last-child {
+    height: 10vh;
+    width: 96vw;
+    margin-top: 12vh;
+    margin-left: 0;
+    visibility: visible;
+    background-color: rgb(177, 0, 221);
+}
