@@ -1,0 +1,71 @@
+* {
+    height: 98%;
+    margin: 0;
+}
+
+body {
+    color: RGB(255, 255, 255);
+}
+
+
+.first {
+    grid-area: first;
+    background-color: rgb(104, 255, 104);
+}
+
+.second {
+    grid-area: second;
+    background-color: rgb(253, 250, 32)
+}
+
+.third {
+    grid-area: third;
+    background-color: rgb(97, 197, 255);
+}
+
+.fourth {
+    grid-area: fourth;
+    background-color: rgb(218, 136, 218);
+}
+
+.fifth {
+    grid-area: fifth;
+    background-color: rgb(141, 248, 207);
+}
+
+.sixth {
+    grid-area: sixth;
+    background-color: rgb(255, 103, 47);
+}
+
+.grid-container {
+    height: 100%;
+    margin: 1% 1% 0 1%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "first first second"
+        "third sub-grid-container sub-grid-container"
+        "third sub-grid-container sub-grid-container";
+}
+
+.grid-container div {
+    display: grid;
+    font-size: 60px;
+    align-content: center;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.sub-grid-container {
+    display: grid;
+    grid-area: sub-grid-container;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas:
+        "fourth fourth"
+        "fifth sixth";
+}

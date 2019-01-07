@@ -1,0 +1,16 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Karla', sans-serif;
+}
+
+.wrapper {
+    height: 100%;
+    width: 50%;
+    clear: left; 
+    float: left; 
+    position: relative; 
+    left: 50%;
+}
