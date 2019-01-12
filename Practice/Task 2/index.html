@@ -21,153 +21,18 @@
                     </svg>
                 </button>
             </header>
-            <div class="chats">
-                <div class="chat-btn">
-                    <div class="info">
-                        <p class="name">
-                            First Doge
-                        </p>
-                        <p class="message">Shame on you...</p>
-                        <div class="image"></div>
-                    </div>
-                </div>
-                <div class="chat-btn">
-                    <div class="info">
-                        <p class="name">
-                            Doge
-                        </p>
-                        <p class="message">Lorem</p>
-                        <div class="image"></div>
+            <div class="chats" id="chats">
 
-                    </div>
-                </div>
-                <div class="chat-btn">
-                    <div class="info">
-                        <p class="name">
-                            Doge
-                        </p>
-                        <p class="message">Lorem</p>
-                        <div class="image"></div>
-                    </div>
-                </div>
-                <div class="chat-btn">
-                    <div class="info">
-                        <p class="name">
-                            Doge
-                        </p>
-                        <p class="message">Lorem</p>
-                        <div class="image"></div>
-                    </div>
-                </div>
-                <div class="chat-btn">
-                    <div class="info">
-                        <p class="name">
-                            Doge
-                        </p>
-                        <p class="message">Lorem</p>
-                        <div class="image"></div>
-                    </div>
-                </div>
-                <div class="chat-btn">
-                    <div class="info">
-                        <p class="name">
-                            Doge
-                        </p>
-                        <p class="message">Lorem</p>
-                        <div class="image"></div>
-                    </div>
-                </div>
-                <div class="chat-btn">
-                    <div class="info">
-                        <p class="name">
-                            Doge
-                        </p>
-                        <p class="message">Lorem</p>
-                        <div class="image"></div>
-                    </div>
-                </div>
-                <div class="chat-btn">
-                    <div class="info">
-                        <p class="name">
-                            Doge
-                        </p>
-                        <p class="message">Lorem</p>
-                        <div class="image"></div>
-                    </div>
-                </div>
-                <div class="chat-btn">
-                    <div class="info">
-                        <p class="name">
-                            Doge
-                        </p>
-                        <p class="message">Lorem</p>
-                        <div class="image"></div>
-                    </div>
-                </div>
-                <div class="chat-btn">
-                    <div class="info">
-                        <p class="name">
-                            Doge
-                        </p>
-                        <p class="message">Lorem</p>
-                        <div class="image"></div>
-                    </div>
-                </div>
             </div>
         </div>
         <div class="rightPanel">
             <div class="top">
                 <div class="leftSide">
-                    <p class="chat-name">Another Doge
+                    <p class="chat-name" id="chat_name"></p>
                 </div>
             </div>
-            <div class="convHistory userBg">
-                <div class="msg received">
-                    <img src="Resources/doge.png">
-                    <p>I’ve got to tell you something: I broke your vase.</p>
-                    <span class="timestamp">00:00</span>
-                </div>
-
-                <div class="msg sended">
-                    <img src="Resources/doge.png">
-                    <p>Ah, no problem. I realize that it was inadvertent. Actually, I didn’t like it very much.</p>
-                    <i class="material-icons readStatus">done_all</i>
-                    <span class="timestamp">00:01</span>
-                </div>
-
-                <div class="msg received">
-                    <img src="Resources/doge.png">
-                    <p>No Problem?? What are u talking about??</p>
-                    <span class="timestamp">00:02</span>
-                </div>
-
-                <div class="msg received">
-                    <img src="Resources/doge.png">
-                    <p>How can you be so unconcerned about precious things! You’ve always been careless and wasteful..</p>
-                    <span class="timestamp">00:02</span>
-                </div>
-
-                <div class="msg sended">
-                    <img src="Resources/doge.png">
-                    <p>???</p>
-                    <i class="material-icons readStatus">done_all</i>
-                    <span class="timestamp">00:04</span>
-                </div>
-
-                <div class="msg sended">
-                    <img src="Resources/doge.png">
-                    <p>But it’s YOU who’s broken my vase…</p>
-                    <i class="material-icons readStatus">done_all</i>
-                    <span class="timestamp">00:04</span>
-                </div>
-
-                <div class="msg received">
-                    <img src="Resources/doge.png">
-                    <p>Shame on you, you ingrate! How dare you to blame me for this trifle, whereas I’ve done so much
-                        for
-                        you!</p>
-                    <span class="timestamp">00:05</span>
-                </div>
+            <div class="convHistory userBg" id="messages">
+               
             </div>
             <div class="replyBar">
                 <input type="text" class="replyMessage" placeholder="Type your message..." />
@@ -199,6 +64,6 @@
     <section class="overlay"></section>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
     <script src="script.js"></script>
+    
 </body>
-
 </html>
