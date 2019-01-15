@@ -1,30 +1,36 @@
 function begin() {
     var fern1 = new Fern('Staghorn Fern', 'Popular type of indoor ferns', 'Platycerium family',
-        25, 'Indoor ferns', '15', 'Not dangerous', 'Asia', 'Food industry', 'Da Vinci');
+    25, 'Indoor ferns', '15', 'Not dangerous', 'Asia', 'Food industry', 'Da Vinci');
 
-    console.log(fern1);
+    var spruce1 = new Spruce('Norway Spruce', 'Short, needle-like, evergreen foliage is dark green', 
+    'Norway Spruces', 45, 'Evergreen needles', '19', 'Not dangerous', 'Norway', 'Medicine', 'Sandy, loam, or clay')
 
-    var string = JSON.stringify(fern1);
+    var fern_string = JSON.stringify(fern1, "", 1);
+    var spruce_string = JSON.stringify(spruce1, "", 1);
 
-    parsedString = JSON.parse(string);
+    parsedFern = JSON.parse(fern_string);
+    parsedSpruce = JSON.parse(spruce_string);
 
-    console.log(string);
-    console.log(parsedString);
+    console.log('JSON-string:' + '\n' + fern_string);
+    console.log(parsedFern);
+
+    console.log('JSON-string:' + '\n' + spruce_string);
+    console.log(parsedSpruce);
 
 }
 
 function Plant(name, description, species, age, class_p,
     inflorescenceSize, hazardClass, habitat, application) {
 
-    name = name;
-    description = description;
-    species = species;
-    age = age;
-    class_p = class_p;
-    inflorescenceSize = inflorescenceSize;
-    hazardClass = hazardClass;
-    habitat = habitat;
-    application = application;
+    this.name = name;
+    this.description = description;
+    this.species = species;
+    this.age = age;
+    this.class_p = class_p;
+    this.inflorescenceSize = inflorescenceSize;
+    this.hazardClass = hazardClass;
+    this.habitat = habitat;
+    this.application = application;
 
     this.getName = function () {
         return name;
@@ -106,8 +112,8 @@ function Fern(name, description, species, age, class_p, inflorescenceSize,
     hazardClass, habitat, application, discoverer) {
 
     Plant.call(this, name, description, species, age, class_p, inflorescenceSize, hazardClass, habitat, application)
-    
-    discoverer = discoverer;
+
+    this.discoverer = discoverer;
 
     this.getDiscoverer = function () {
         return discoverer;
@@ -116,33 +122,14 @@ function Fern(name, description, species, age, class_p, inflorescenceSize,
     this.setDiscoverer = function (value) {
         this.discoverer = value;
     }
-
-    this.toJSON = function () {
-        
-        var result = "".concat("{ 'Name':'", this.getName(), "', " +
-            "'Description':'", this.getDescription(), "', " +
-            "'Species':'", this.getSpecies(), "', " +
-            "'Age':'", this.getAge(), "', " +
-            "'Class':'", this.getClass_p(), "', " +
-            "'Inflorescence Size':'", this.getInflorescenceSize(), "', " +
-            "'Hazard Class':'", this.getHazardClass(), "', " +
-            "'Habitat':'", this.getHabitat(), "', " +
-            "'Application':'", this.getApplication(), "', " +
-            "'Discoverer':'", this.getDiscoverer(), "'}");
-        console.log(result);
-
-        return result;
-    }
-
-
 }
 
 
 function Spruce(name, description, species, age, class_p, inflorescenceSize,
     hazardClass, habitat, application, placeOfGrowth) {
 
-    Plant.call(name, description, species, age, class_p, inflorescenceSize, hazardClass, habitat, application)
-    
+    Plant.call(this, name, description, species, age, class_p, inflorescenceSize, hazardClass, habitat, application)
+
     this.placeOfGrowth = placeOfGrowth;
 
     this.getPlaceOfGrowth = function () {
@@ -150,6 +137,6 @@ function Spruce(name, description, species, age, class_p, inflorescenceSize,
     }
 
     this.setPlaceOfGrowth = function (value) {
-        placeOfGrowth = value;
+        this.placeOfGrowth = value;
     }
 }
