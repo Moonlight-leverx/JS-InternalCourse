@@ -43,6 +43,9 @@ btnAdd.addEventListener("click", function() {
 	var xhr = new XMLHttpRequest();
 	xhr.open('POST', 'https://jsonplaceholder.typicode.com/posts');
 	xhr.setRequestHeader('Content-Type', 'application/json');
+	xhr.onload = function() {
+		alert('HTTP response status: ' + xhr.status);
+	}
 	xhr.send(JSON.stringify(dataToAdd));
 	console.log(dataToAdd);
 
@@ -64,22 +67,28 @@ btnUpdate.addEventListener("click", function() {
 	var xhr = new XMLHttpRequest();
 	xhr.open('PUT', 'https://jsonplaceholder.typicode.com/posts/'+ idToUpdate);
 	xhr.setRequestHeader("Content-Type", "application/json");
+	xhr.onload = function() {
+		alert('HTTP response status: ' + xhr.status);
+	}
 	xhr.send(JSON.stringify(dataToUpdate));
 	console.log(dataToUpdate);
+
 	renderTable();
 
 	clearInp();
 });
 
 
-btnDelete.addEventListener("click", function() { // event to delete fields by id in users
+btnDelete.addEventListener("click", function() { 
 
 	var idToDelete = parseInt(document.getElementById('inpDel').value, 10);
-
-	var request = new XMLHttpRequest();
-	request.open('DELETE', 'https://jsonplaceholder.typicode.com/posts/'+ idToDelete);
-	request.setRequestHeader("Content-Type", "application/json");
-	request.send();
+	var xhr = new XMLHttpRequest();
+	xhr.open('DELETE', 'https://jsonplaceholder.typicode.com/posts/'+ idToDelete);
+	xhr.setRequestHeader("Content-Type", "application/json");
+	xhr.onload = function() {
+		alert('HTTP response status: ' + xhr.status);
+	}
+	xhr.send();
 
 	renderTable();
 
