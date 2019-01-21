@@ -136,7 +136,6 @@ nav button>span {
 	left: 0px;
 	width: 320px;
 	height: 100vh;
-	float: left;
 	background: #17212b;
 	border-right: 1px solid #1e3850;
 }
@@ -241,7 +240,6 @@ header {
 .leftSide {
 	display: inline-block;
 	clear: none;
-	float: left;
 }
 
 .leftSide .chat-name {

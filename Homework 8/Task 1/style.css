@@ -1,0 +1,58 @@
+* {
+    font-family: 'Karla', sans-serif;
+}
+
+
+#box {
+    display: flex;
+    justify-content: space-between;
+}
+
+#tableBox {
+    display: flex;
+	justify-content: space-around;
+	
+}
+
+.requestBtn {
+	border: none;
+	background-color: lightgreen;
+	height: 50px;
+	width: 100px;
+	font-size: 24px;
+	transition: background-color .4s ease-out;
+}
+
+.requestBtn:hover {
+	transition: background-color .4s ease-out;
+	transition: color .4s ease-out;
+	background-color: green;
+	color: white;
+}
+
+table
+{
+    margin-top: 100px;
+    background-color: rgb(0, 212, 0);
+}
+
+td
+{
+    background: rgb(226, 226, 226);
+    text-align: center;
+    padding: 5px;
+}
+
+.tr_header
+{
+    color: rgb(45, 45, 45);
+    font-weight: bold;
+}
+
+#request-menu{
+    margin-top: 100px;
+}
+
+caption {
+    font-size: 2rem;
+}

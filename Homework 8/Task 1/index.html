@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.6.2.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="box">
+        <button class="requestBtn" id="count" onclick="toRouteRequest(this)">Count</button>
+        <button class="requestBtn" id="top" onclick="toRouteRequest(this)">Top</button>
+        <button class="requestBtn" id="expand" onclick="toRouteRequest(this)">Expand</button>
+        <button class="requestBtn" id="orderBy" onclick="toRouteRequest(this)">OrderBy</button>
+        <button class="requestBtn" id="search" onclick="toRouteRequest(this)">Search</button>
+        <button class="requestBtn" id="select" onclick="toRouteRequest(this)">Select</button>
+        <button class="requestBtn" id="skip" onclick="toRouteRequest(this)">Skip</button>
+        <button class="requestBtn" id="filter" onclick="toRouteRequest(this)">Filter</button>
+    </div>
+
+
+    <div id="tableBox">
+        <div>
+            <table id="table-data">
+                <caption>Result</caption>
+                <tr class="tr_header">
+                    <th>UserName</th>
+                    <th>FirstName</th>
+                    <th>LastName</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</body>
+
+</html>
