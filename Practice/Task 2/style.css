@@ -132,7 +132,7 @@ nav button>span {
 
 .leftPanel {
 	position: relative;
-	display: inline-block;
+	/* display: inline-block; */
 	left: 0px;
 	width: 320px;
 	height: 100vh;
@@ -239,7 +239,7 @@ header {
 }
 
 .leftSide {
-	display: inline-block;
+	/* display: inline-block; */
 	clear: none;
 	float: left;
 }
